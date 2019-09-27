@@ -36,4 +36,11 @@ end
   #  if  @sender.valid? && @receiver.valid? && @sender.balance >= @amount
   
 #   def valid?
-    if  @sender.valid? && @receiver.valid? && @sender.balance >= @amountis checking to see if 
+  #  if  @sender.valid? && @receiver.valid? checking to see if  sender and reciever have open account and money
+  
+  #@sender.balance >= @amount checking to see if sender has enough money to send
+  
+  
+  
+  
+  
