@@ -9,7 +9,13 @@ attr_accessor :sender, :amount, :receiver, :status
     @status = "pending"
   end
 
-
+  def valid?
+    if @status == "open" && @balance > 0
+      true
+    else
+      false
+    end
+  end
 
 
   # def valid?
