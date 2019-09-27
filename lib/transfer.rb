@@ -29,6 +29,8 @@ attr_accessor :sender, :amount, :receiver, :status
        @status = "complete"
     end
   end
+  
+  
 end
 
 
