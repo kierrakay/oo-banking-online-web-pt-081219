@@ -30,3 +30,10 @@ attr_accessor :sender, :amount, :receiver, :status
     end
   end
 end
+
+
+#  def valid?
+  #  if  @sender.valid? && @receiver.valid? && @sender.balance >= @amount
+  
+#   def valid?
+    if  @sender.valid? && @receiver.valid? && @sender.balance >= @amountis checking to see if 
