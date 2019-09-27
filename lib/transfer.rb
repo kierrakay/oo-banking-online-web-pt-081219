@@ -21,8 +21,9 @@ attr_accessor :sender, :amount, :receiver, :status
       if  !valid?  # this is saying to check if not valid do this else..other code
        @status = "rejected"
        "Transaction rejected. Please check your account balance."
-      else
-       @sender.balance > @amount && @status == "pending"
+        @sender.balance > @amount && @status == "pending"
+      elsif
+      
        @sender.balance -= @amount
        @receiver.balance += @amount
        @status = "complete"
