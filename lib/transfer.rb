@@ -11,7 +11,7 @@ attr_accessor :sender, :amount, :receiver, :status
   end
 
   def valid?
-    if  @sender.valid? && @receiver.valid? 
+    if  @sender.valid? && @receiver.valid? && @sender.balance >= @amount
       true 
     else 
       false
