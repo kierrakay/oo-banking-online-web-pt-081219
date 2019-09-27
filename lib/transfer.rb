@@ -19,8 +19,8 @@ attr_accessor :sender, :amount, :receiver, :status
   end
 
   def execute_transaction 
-    binding.pry
       if  !valid?  # this is saying to check if not valid and do this else..other code
+         binding.pry
        @status = "rejected"
        return "Transaction rejected. Please check your account balance."
      
