@@ -18,9 +18,9 @@ attr_accessor :sender, :amount, :receiver, :status
   end
 
   def execute_transaction 
-      if  !valid?  
+      if  !valid?  # this is saying to check if not valid do this else..other code
        @status = "rejected"
-       return "Transaction rejected. Please check your account balance."
+       "Transaction rejected. Please check your account balance."
       else
        @sender.balance > @amount && @status == "pending"
        @sender.balance -= @amount
